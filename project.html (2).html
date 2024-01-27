@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>На авто по ВКО</title>
+    <style>
+        body {
+            background-image: url('https://masterpiecer-images.s3.yandex.net/be1713d0735e11eeb405ceda526c50ab:upscaled');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            color: #ffffff;
+        }
+
+        header,
+        nav,
+        section,
+        footer {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        h1,
+        h2,
+        p,
+        a {
+            margin: 0;
+            color: #ffffff;
+        }
+
+        h1 {
+            color: #000000;
+            background-color: #00ced1;
+            display: inline-block;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 20px;
+            border: 5px solid #00ced1; /* Turquoise border */
+        }
+
+        /* Style rule for the last paragraph */
+        section p:last-child {
+            color: #ffffff; /* Set the text color to white */
+            background-color: transparent; /* Set the background color to transparent */
+        }
+
+        /* Flexbox style for positioning image to the left */
+        #sp1_inf,
+        #sp2_inf,
+        #sp3_inf,
+        #sp4_inf, 
+        #sp5_inf{
+            display: flex;
+            flex-direction: row; /* Display items in a row */
+            align-items: center; /* Align items vertically in the center */
+        }
+
+        #sp1_inf img,
+        #sp2_inf img,
+        #sp3_inf img,
+        #sp4_inf img,
+        #sp5_inf img{
+            margin-right: 10px; /* Add some margin between text and image */
+        }
+
+        /* Increased font size and bold style after language change */
+        [data-lang-en],
+        [data-lang-ru],
+        [data-lang-kk] {
+            font-size: 25px; /* You can adjust the font size as needed */
+            font-weight: bold;
+        }
+
+        /* Styling for sp_inf section */
+        #sp_inf {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000;
+            background-color: #00ced1;
+            display: inline-block;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function changeLanguage(language) {
+            var timestamp = new Date().getTime();
+            document.getElementById('welcome-message').innerHTML = document.getElementById('welcome-message').getAttribute('data-lang-' + language);
+            document.getElementById('zs_section').innerHTML = document.getElementById('zs_section').getAttribute('data-lang-' + language) + '<img src="https://kartin.papik.pro/uploads/posts/2023-07/thumbs/1689146808_kartin-papik-pro-p-kartinki-ozera-zaisan-4.jpg?' + timestamp + '" width="400" height="341">';
+            document.getElementById('kt_section').innerHTML = document.getElementById('kt_section').getAttribute('data-lang-' + language) + '<img src="https://static.yk-news.kz/202106031726.jpg?' + timestamp + '" width="400" height="341">';
+            document.getElementById('sp_inf').innerHTML = document.getElementById('sp_inf').getAttribute('data-lang-' + language);
+            document.getElementById('sp1_inf').innerHTML = document.getElementById('sp1_inf').getAttribute('data-lang-' + language) + '<img src="https://treeple.kz/upload/iblock/03f/uefq42futw22rmcwso47n5n1e1r12xco.jpg?' + timestamp + '" width="400" height="341">';
+            document.getElementById('sp2_inf').innerHTML = document.getElementById('sp2_inf').getAttribute('data-lang-' + language) + '<img src="https://static.yk-news.kz/images/2023083110063504.jpeg?' + timestamp + '" width="400" height="341">';
+            document.getElementById('sp3_inf').innerHTML = document.getElementById('sp3_inf').getAttribute('data-lang-' + language) + '<img src="https://sun9-20.userapi.com/impf/c633828/v633828219/4404f/TSqcuSKBpRU.jpg?size=807x539&quality=96&sign=afd76847b9eef41ca5b0fccbd245cb28&c_uniq_tag=CcXKp74qEN1QzVICkP3F7qZqnlNlqPUBzC3UsKFofjg&type=album?' + timestamp + '" width="400" height="341">';
+            document.getElementById('sp4_inf').innerHTML = document.getElementById('sp4_inf').getAttribute('data-lang-' + language) + '<img src=https://img.tourister.ru/files/2/1/8/6/1/8/6/3/original.jpg?' + timestamp + '" width="400" height="341">';
+            document.getElementById('sp5_inf').innerHTML = document.getElementById('sp5_inf').getAttribute('data-lang-' + language) + '<img src=https://sxodim.com/uploads/images/2023/09/25/optimized/d3d929eced833c2313f2186f45421613_800xauto-q-85.jpg?' + timestamp + '" width="400" height="341">';
+        }   
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="welcome-message" data-lang-en="By car in East Kazakhstan region" data-lang-ru="На авто по ВКО" data-lang-kk="Шығыс Қазақстан облысында автокөлікпен">На авто по ВКО</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="changeLanguage('en')">English</a></li>
+            <li><a href="#" onclick="changeLanguage('ru')">Русский</a></li>
+            <li><a href="#" onclick="changeLanguage('kk')">Қазақша</a></li>
+        </ul>
+    </nav>
+
+    <section id="zs_section" data-lang-en="Ust-Kamenogorsk->Kiin-Kerish->Zaisan" data-lang-ru="Усть-Каменогорск->Киин-Кериш->Зайсан" data-lang-kk="Өскемен->Киін-Керіш->Зайсан">
+        <p>Усть-Каменогорск->Киин-Кериш->Зайсан</p>
+        <img src="https://kartin.papik.pro/uploads/posts/2023-07/thumbs/1689146808_kartin-papik-pro-p-kartinki-ozera-zaisan-4.jpg" width="500" height="400">
+    </section>
+
+    <section id="kt_section" data-lang-en="Oskemen->Katon-Karagay->Rakhmanov bulaktary" data-lang-ru="Усть-Каменогорск->Катон-Карагай->Рахмановские ключи" data-lang-kk="Өскемен->Катон-Қарағай->Рахманов бұлақтары">
+        <p>Усть-Каменогорск->Катон-Карагай->Рахмановские ключи</p>
+        <img src="https://static.yk-news.kz/202106031726.jpg" width="500" height="400">
+    </section>
+
+    <section id="sp_inf" data-lang-en="Ust-Kamenogorsk->Kiin-Kerish->Zaisan" data-lang-ru="Усть-Каменогорск->Киин-Кериш->Зайсан" data-lang-kk="Өскемен->Киін-Керіш->Зайсан">
+        <h1>Усть-Каменогорск->Киин-Кериш->Зайсан</h1>
+    </section>
+    
+    <section id="sp1_inf" data-lang-en="From Ust-Kamenogorsk you can get to the Martian mountains in 6.5 hours by car. Along the way you will also find scenic views. Tip - leave the city early to catch the ferry (first departure at 6 am). It is also advisable to refuel in Kurchum, since there will be no further gas stations." data-lang-ru="Из Усть-Каменогорска добраться до марсианских гор можно добраться за 6.5 часов на машине. По дороге вас также ожидают живописные виды. Совет- выезжайте из города пораньше, чтобы успеть на паром (первый рейс в 6 утра). Также желательно заправиться в Курчуме, так как дальше заправок не будет." data-lang-kk="Өскеменнен Марс тауларына көлікпен 6,5 сағатта жетуге болады. Жолда сіз сондай-ақ көркем көріністерді таба аласыз. Кеңес - паромға жету үшін қаладан ертерек шығыңыз (алғашқы шығу таңғы сағат 6-да). Сондай-ақ Күршімде жанармай құйған жөн, өйткені бұдан әрі жанармай құю бекеттері болмайды.">
+        <p>Из Усть-Каменогорска добраться до марсианских гор можно добраться за 6.5 часов на машине. По дороге вас также ожидают живописные виды. Совет- выезжайте из города пораньше, чтобы успеть на паром (первый рейс в 6 утра). Также желательно заправиться в Курчуме, так как дальше заправок не будет.</p>
+        <img src="https://treeple.kz/upload/iblock/03f/uefq42futw22rmcwso47n5n1e1r12xco.jpg" width="400" height="341">
+    </section>
+
+    <section id="sp2_inf" data-lang-en="By the way, 20 km away there is Cape Shekelmes. These are also clay mountains, but white colors predominate. If you look hard enough, you can find the bones of fossil crocodiles, salamanders, remains of ancient plants and much more." data-lang-ru="Кстати, в 20км есть мыс Шекельмес. Это тоже глинянные горы, но преобладают белые цвета. Если хорошо поискать, то можно найти кости ископаемых крокодилов, саламандр, остатки древних растений и многое другое" data-lang-kk="Айтпақшы, 20 шақырым жерде Шекелмес мүйісі бар. Бұлар да сазды таулар, бірақ ақ түстер басым. Егер сіз мұқият қарасаңыз, қазба қолтырауындардың сүйектерін, саламандраларды, ежелгі өсімдіктердің қалдықтарын және т.б. таба аласыз.">
+        <p>Кстати, в 20км есть мыс Шекельмес. Это тоже глинянные горы, но преобладают белые цвета. Если хорошо поискать, то можно найти кости ископаемых крокодилов, саламандр, остатки древних растений и многое другое</p>
+        <img src="https://static.yk-news.kz/images/2023083110063504.jpeg" width="400" height="341">
+    </section>
+
+    <section id="sp3_inf" data-lang-en="Next we go to Lake Zaisan.
+    This is the largest lake in Eastern Kazakhstan. It is surrounded by the Altai, Kalbinsky and Tarbagatai mountain ranges. Zaisan can also be called “Castle of Mountain Spirits”. It has a lot of fish, so it's a great place to go fishing.
+    By the way, 60 km from the eastern shore of the lake is the Chinese border. From there the Black Irtysh River flows and flows into the lake." data-lang-ru="Далее отправляемся на озеро Зайсан. 
+    Это Самое большое озеро в Восточном Казахстане. Оно окружено Алтайским, Калбинским и Тарбагатайским горными хребтами. Зайсан также могут называть «Замок горных духов». В нем водится много рыбы, поэтому это отличное место , чтобы порыбачить. 
+    Кстати, в 60км от восточного берега озера, находится Китайская граница. Оттуда течет  и впадает в озеро река Чёрный Иртыш." data-lang-kk="Одан әрі Зайсан көліне барамыз.
+    Бұл Шығыс Қазақстандағы ең үлкен көл. Ол Алтай, Қалбі, Тарбағатай тау жоталарымен қоршалған. Зайсанды «Тау рухтарының сарайы» деп те атауға болады. Онда балық көп, сондықтан балық аулауға тамаша орын.
+    Айтпақшы, көлдің шығыс жағалауынан 60 шақырым жерде Қытай шекарасы орналасқан. Одан Қара Ертіс өзені ағып, көлге құяды.">
+        <p>Далее отправляемся на озеро Зайсан. 
+            Это Самое большое озеро в Восточном Казахстане. Оно окружено Алтайским, Калбинским и Тарбагатайским горными хребтами. Зайсан также могут называть «Замок горных духов». В нем водится много рыбы, поэтому это отличное место , чтобы порыбачить. 
+            Кстати, в 60км от восточного берега озера, находится Китайская граница. Оттуда течет  и впадает в озеро река Чёрный Иртыш.</p>
+        <img src="https://sun9-20.userapi.com/impf/c633828/v633828219/4404f/TSqcuSKBpRU.jpg?size=807x539&quality=96&sign=afd76847b9eef41ca5b0fccbd245cb28&c_uniq_tag=CcXKp74qEN1QzVICkP3F7qZqnlNlqPUBzC3UsKFofjg&type=album" width="400" height="341">
+    </section>
+
+    <section id="sp4_inf" data-lang-en="Katon-Karagai National Park - The heart of Eastern Kazakhstan.
+    It is located 350 km from Ust-Kamenogorsk, and depending on the time of year, travel time can vary from 4 hours to 6.5.
+    It ideally combines a mountainous landscape with clear lakes, forests with alpine meadows and noisy rivers with large rocks." data-lang-ru="Катон-Карагайский национальный парк- Сердце Восточного Казахстана. 
+    Он находится в 350км от Усть-Каменогорска, и в зависимости от времени года, время в дороге может варьироваться от 4 часов до 6.5.
+    Там идеальным образом сочетаются горный ландшафт с чистейшими озёрами, лесные массивы с альпийскими лугами и шумные реки с большими скалами" data-lang-kk="Катонқарағай ұлттық саябағы – Шығыс Қазақстанның жүрегі.
+    Ол Өскеменнен 350 шақырым жерде орналасқан және жыл мезгіліне байланысты жол жүру уақыты 4 сағаттан 6,5 сағатқа дейін өзгеруі мүмкін.
+    Ол таза көлдері бар таулы ландшафтты, альпі шалғындары бар ормандарды және үлкен жартастары бар шулы өзендерді тамаша үйлестіреді.">
+        <p>Катон-Карагайский национальный парк- Сердце Восточного Казахстана. 
+            Он находится в 350км от Усть-Каменогорска, и в зависимости от времени года, время в дороге может варьироваться от 4 часов до 6.5.
+            Там идеальным образом сочетаются горный ландшафт с чистейшими озёрами, лесные массивы с альпийскими лугами и шумные реки с большими скалами</p>
+        <img src="https://img.tourister.ru/files/2/1/8/6/1/8/6/3/original.jpg" width="400" height="341">
+    </section>
+
+    <section id="sp5_inf" data-lang-en="After an active holiday in the park, we go to the Rakhmanovsky Springs. They are located 110 km from the village of Katon-Karagai. Travel time will be about 2 hours.
+    The water temperature ranges from +35 to +42 degrees. Water is healing because it is filled with minerals. She treats diseases of the joints, nerves and circulatory organs.
+    Also, the Sanatorium, located there since 1964, welcomes guests both in winter and summer. And it offers various types of entertainment, so you definitely won’t be bored!" data-lang-ru="После активного отдыха в парке, отправляемся к Рахмановским Источникам. Они расположены в 110км от села Катон-Карагай. Время в пути составит около 2х часов. 
+    Температура воды колеблется от +35 до +42 градусов. Вода является лечебной, ведь она наполнена минеральными веществами. Она лечит болезни суставов , нервов и органов кровообращения. 
+    Также Санаторий, находящийся там с 1964 года, принимает гостей и зимой, и летом. И предлагает различного вида развлечения, поэтому скучно вам точно не будет!" data-lang-kk="Саябақта белсенді демалыстан кейін біз Рахмановский бұлақтарына барамыз. Олар Катонқарағай ауылынан 110 шақырым жерде орналасқан. Жол жүру уақыты шамамен 2 сағатты құрайды.
+    Судың температурасы +35-тен +42 градусқа дейін. Су шипалы, өйткені ол минералдарға толы. Ол буын, жүйке, қан айналым мүшелерінің ауруларын емдейді.
+    Сондай-ақ, 1964 жылдан бері орналасқан шипажай қыста да, жазда да қонақтарды қарсы алады. Және ол әртүрлі ойын-сауық түрлерін ұсынады, сондықтан сіз міндетті түрде жалықпайсыз!">
+        <p>После активного отдыха в парке, отправляемся к Рахмановским Источникам. Они расположены в 110км от села Катон-Карагай. Время в пути составит около 2х часов. 
+            Температура воды колеблется от +35 до +42 градусов. Вода является лечебной, ведь она наполнена минеральными веществами. Она лечит болезни суставов , нервов и органов кровообращения. 
+            Также Санаторий, находящийся там с 1964 года, принимает гостей и зимой, и летом. И предлагает различного вида развлечения, поэтому скучно вам точно не будет!</p>
+        <img src="https://sxodim.com/uploads/images/2023/09/25/optimized/d3d929eced833c2313f2186f45421613_800xauto-q-85.jpg" width="400" height="341">
+    </section>
+
+    <footer>
+        <p>©Қадырмолда Сәфийә ОСШЛМФИ. Все права защищены.</p>
+    </footer>
+
+</body>
+
+</html>
